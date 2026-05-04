@@ -88,33 +88,33 @@ from module.pipeline import Pipeline
 
 pipeline = Pipeline()
 
-# 단계 1: 데이터베이스 구축
+# Step 1: Build database
 pipeline.run_step_1_build_db()
 
-# 단계 2: 검색 인덱스 구축
+# Step 2: Build search index
 pipeline.run_step_2_build_index()
 
-# 단계 3: 검색
+# Step 3: Search
 pipeline.run_step_3_search()
 
-# 단계 4: PDF에서 요약 생성(마크다운 자동 생성)
+# Step 4: Summarize from PDFs (generates markdown automatically)
 pipeline.run_step_4_summarize()
-# 형식: PDF 파일이 포함된 디렉토리 경로 입력: 
-# 출력: data/output/에 summary_pdf_[timestamp].md 생성
+# Prompts: "Enter directory path containing PDF files: "
+# Output: Creates summary_pdf_[timestamp].md in data/output/
 ```
 
 ### PDF 처리 워크플로우
 
 ```bash
-단계 선택 (0-5): 4
+Select step (0-5): 4
 
-PDF 파일이 포함된 디렉토리 경로 입력: D:\papers
+Enter directory path containing PDF files: D:\papers
 
-[스트리밍 출력으로 PDF 처리 중]
-  PDF 처리 중: 100%|████████| 10/10 [02:30<00:00, 15.00s/it]
+[Processing PDFs with streaming output]
+  Processing PDFs: 100%|████████| 10/10 [02:30<00:00, 15.00s/it]
 
-OK: 10개의 PDF 처리됨
-출력: data/output/summary_pdf_1777856449.md
+OK: Processed 10 PDFs
+Output: data/output/summary_pdf_1777856449.md
 ```
 
 **주요 기능**:
@@ -293,20 +293,11 @@ LLM_MODEL=mistral
 ollama pull mistral
 ```
 
-### LLM 작동 확인
-
-API 연결 테스트
-```bash
-curl -X POST http://localhost:11434/api/generate \
-  -H "Content-Type: application/json" \
-  -d '{"model":"mistral","prompt":"Hello"}'
-```
-
 ---
 
 ## LLM 프롬프트 사용자 지정
 
-### 프롬프트가 저장되는 위치
+### 프롬프트 저장 위치
 
 프롬프트는 `module/summarizer.py`의 `SummaryGenerator` 클래스에서 정의됩니다.
 
