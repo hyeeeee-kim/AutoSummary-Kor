@@ -1,0 +1,30 @@
+# Core dependencies (Windows compatible)
+torch==2.1.1
+transformers==4.45.0
+sentence-transformers==3.0.0
+
+# Vector search and database (NumPy 2.0 compatible)
+chromadb==0.6.0
+rank-bm25==0.2.2
+posthog==3.0.1
+
+# Web scraping
+beautifulsoup4==4.12.2
+requests==2.31.0
+
+# PDF processing
+pdfplumber==0.10.3
+
+# Configuration and authentication
+pyyaml==6.0.1
+python-dotenv==1.0.0
+huggingface-hub==0.23.2
+
+# Progress and UI
+tqdm==4.66.1
+
+# Development (optional)
+black==23.12.0
+flake8==6.1.0
+pytest==7.4.3
+

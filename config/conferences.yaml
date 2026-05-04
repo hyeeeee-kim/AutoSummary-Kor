@@ -1,0 +1,57 @@
+# Conference Configuration for Paper Scraping
+# ================================================================
+# All papers are scraped from DBLP database
+# Add/remove conferences by setting enabled: true/false
+#
+# Fields:
+#   - key: Unique identifier (used internally)
+#   - name: Full conference name with year
+#   - url: DBLP conference page URL
+#   - enabled: true to scrape, false to skip
+
+conferences:
+  # Machine Learning Conferences
+  neurips:
+    name: "NeurIPS 2024"
+    url: "https://dblp.org/db/conf/nips/neurips2024.html"
+    enabled: true
+
+  icml:
+    name: "ICML 2025"
+    url: "https://dblp.org/db/conf/icml/icml2025.html"
+    enabled: true
+
+  iclr:
+    name: "ICLR 2025"
+    url: "https://dblp.org/db/conf/iclr/iclr2025.html"
+    enabled: true
+
+  aaai:
+    name: "AAAI 2025"
+    url: "https://dblp.org/db/conf/aaai/aaai2025.html"
+    enabled: true
+
+  # Security Conferences
+  acm_ccs:
+    name: "ACM CCS 2025"
+    url: "https://dblp.org/db/conf/ccs/ccs2025.html"
+    enabled: true
+
+  aisec_workshop:
+    name: "ACM CCS AISec Workshop 2025"
+    url: "https://dblp.org/db/conf/aisec-ws/aisec2025.html"
+    enabled: true
+
+  usenix_security:
+    name: "USENIX Security 2025"
+    url: "https://dblp.org/db/conf/uss/uss2025.html"
+    enabled: true
+
+  # ================================================================
+  # Template for Adding New Conferences (uncomment and modify)
+  # ================================================================
+  # new_conference:
+  #   name: "Conference Name YYYY"
+  #   url: "https://dblp.org/db/conf/xxx/xxxYYYY.html"
+  #   enabled: false
+  # ================================================================

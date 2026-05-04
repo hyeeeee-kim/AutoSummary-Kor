@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment variables (NEVER commit)
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data & Output (local)
+data/
+output/
+*.md
+!README.md
+
+# Database files (NEVER commit)
+*.db
+papers.db
+data/papers.db
+
+# Vector databases (NEVER commit)
+chroma/*
+data/chroma/
+chroma_db/
+vectorstore/
+cache/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
