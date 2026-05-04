@@ -1,6 +1,7 @@
 # 학술논문 요약 시스템
 
 DBLP에서 학술논문을 스크래핑하고, 검색 가능한 벡터 데이터베이스를 구축한 후 Ollama LLM을 사용하여 AI 기반 요약을 생성하는 모듈식 Python 파이프라인입니다.
+
 **영문판** https://github.com/hyeeeee-kim/AutoSummary
 
 ---
